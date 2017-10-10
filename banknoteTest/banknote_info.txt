@@ -1,0 +1,22 @@
+Modified version of a Dataset from the UCI Repository https://archive.ics.uci.edu/ml/datasets/banknote+authentication#
+
+The following information is adapted from that site:
+
+  Owner of database: Volker Lohweg (University of Applied Sciences, Ostwestfalen-Lippe, volker.lohweg '@' hs-owl.de)
+  Donor of database: Helene DÃ¶rksen (University of Applied Sciences, Ostwestfalen-Lippe, helene.doerksen '@' hs-owl.de)
+
+  Data Set Information:
+  Data were extracted from images that were taken from genuine and forged banknote-like specimens. For digitization, an industrial camera usually used for print inspection was used. The final images have 400x 400 pixels. Due to the object lens and distance to the investigated object gray-scale pictures with a resolution of about 660 dpi were gained. Wavelet Transform tool were used to extract features from images.
+   
+  Attribute Information:
+  
+  1. variance of Wavelet Transformed image (continuous)
+  2. skewness of Wavelet Transformed image (continuous)
+  3. class (0 or 1)
+
+Each line of the files banknote_train.csv and banknote_test.csv corresponds to a single banknote.
+The 3 values listed on a line are the values for attribute 1,  attribute 2, and class.
+
+(Notes by L. Hellerstein Fall 2017: The original dataset in the UCI Repository has 2 additional attributes for each bank note.  Here we use include only 2 of the 4.
+
+It's not clear from the information given in the UCI Repository, for this dataset, whether Class 1 has the images of the genuine banknotes or the counterfeit banknotes.  But I think that Class 1 is for the geniune banknotes.)
